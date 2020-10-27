@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Divider, Slider, TextareaAutosize, FormGroup, Checkbox, FormControlLabel, Typography, TextField, Button, StepLabel, Step, Stepper, Grid} from "@material-ui/core";
+import { Paper, Slider, TextareaAutosize, FormGroup, Checkbox, FormControlLabel, Typography, TextField, Button, StepLabel, Step, Stepper, Grid} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,7 +55,7 @@ function getStepContent(stepIndex:any) {
                     <Typography  variant={"h5"} color="primary" display="block">Descripción de la tensión</Typography>
                 </Grid>
                 <Grid  item xs={12}>
-                <TextareaAutosize placeholder="Descripción de la tensión" style={{ minHeight: 300,minWidth: 650 }} />  
+                    <TextareaAutosize placeholder="Descripción de la tensión" style={{ minHeight: 300,minWidth: 650, backgroundColor: "#D9E2EA" }} />  
                 </Grid>     
             </Grid>
         );
@@ -194,12 +194,12 @@ function getStepContent(stepIndex:any) {
       );
     case 3:
         return(
-            <Grid container direction="row" justify="center" alignItems="center" spacing={1} > 
-                <Grid container item xs={12} justify="center" alignItems="center">
-                    <Typography  variant={"h5"} color="primary" display="block">Valoración de las tensiones</Typography>
+             <div>
+                 <Grid item container direction="row" justify="center" alignItems="center" style={{ padding:50 }}>
+                    <Typography  variant={"h5"} color="primary">Valoración de las tensiones</Typography>
                 </Grid>
-                <Grid container item xs={12} justify="center" alignItems="center">
-                    <Grid item xs={6} direction="column" justify="center" alignItems="center" spacing={1} > 
+                <Paper style={{ paddingLeft: 100, paddingTop: 30, paddingBottom: 30, backgroundColor: "#D9E2EA" }} >
+                    <Grid container direction="row" justify="center" alignItems="center"  >
                         <Grid item xs={6} >
                             <Typography color="primary" display="block">I. Intensidad (gravedad)</Typography>
                             <Slider aria-labelledby="continuous-slider" style={{maxWidth:160}}/>
@@ -208,8 +208,7 @@ function getStepContent(stepIndex:any) {
                             <Typography color="secondary" display="block">C Cronicidad (Duración)</Typography>
                             <Slider color="secondary" aria-labelledby="continuous-slider" style={{maxWidth:160}}/>
                         </Grid>
-                    </Grid>
-                    <Grid item xs={6} direction="column" justify="center" alignItems="center" spacing={1} > 
+                    
                         <Grid item xs={6} >
                             <Typography color="secondary" display="block">Ip. Impacto</Typography>
                             <Slider color="secondary" aria-labelledby="continuous-slider" style={{maxWidth:160}}/>
@@ -219,105 +218,100 @@ function getStepContent(stepIndex:any) {
                             <Slider aria-labelledby="continuous-slider" style={{maxWidth:160}}/>
                         </Grid>
                     </Grid>
-                </Grid>
-            </Grid>
+                </Paper>   
+            </div>
         );
     case 4:
       return (
-        <Grid container direction="row" justify="center" alignItems="center" spacing={2} >
-            <Grid item>
-                <Typography  variant={"h5"} color="primary" display="block">Dimensiones involucradas</Typography>
-            </Grid>
-            <Grid container direction="row" justify="center" alignItems="center" style={{marginLeft:150,marginRight:150}}>
-                <Grid item xs={6} >
-                    <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
-                        <Grid item xs={12} >
-                            <Typography  variant={"h6"} color="primary" display="block">Reforzadores</Typography>
+        <Grid container direction="row" justify="center" alignItems="center" spacing={4} >
+            <Grid item xs={6} >
+                <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
+                    <Grid item xs={12} >
+                        <Typography  variant={"h6"} color="primary" display="block">Reforzadores</Typography>
+                    </Grid>
+                    <Grid item xs={12} >  
+                        <TextareaAutosize placeholder="Factores Reforzadores" style={{ minHeight: 60,minWidth: 420,  backgroundColor: "#D9E2EA"}} />       
+                    </Grid>
+                    <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
+                        <Grid item xs={4} >
+                            <Typography color="primary" display="block">Dimensiones</Typography>
+                            <FormGroup>
+                                <FormControlLabel
+                                    control={<Checkbox color="primary" checked={true} onChange={handleCheckboxChange} name="gilad" />}
+                                    label="Poblacional"
+                                    color="primary"
+                                />
+                                <FormControlLabel
+                                    control={<Checkbox color="primary" checked={false} onChange={handleCheckboxChange} name="jason" />}
+                                    label="Ambiental"
+                                    color="primary"
+                                />
+                                <FormControlLabel
+                                    control={<Checkbox color="primary" checked={false} onChange={handleCheckboxChange} name="antoine" />}
+                                    label="Social"
+                                    color="primary"
+                                />
+                                <FormControlLabel
+                                    control={<Checkbox color="primary" checked={false} onChange={handleCheckboxChange} name="jason" />}
+                                    label="Institucional"
+                                    color="primary"
+                                />
+                                <FormControlLabel
+                                    control={<Checkbox color="primary" checked={false} onChange={handleCheckboxChange} name="antoine" />}
+                                    label="Económica"
+                                    color="primary"
+                                />
+                            </FormGroup>
                         </Grid>
-                        <Grid item xs={12} >  
-                            <TextareaAutosize placeholder="Factores Reforzadores" style={{ minHeight: 60,minWidth: 440 }} />       
-                        </Grid>
-                        <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
-                            <Grid item xs={6} >
-                                <Typography color="primary" display="block">Dimensiones</Typography>
-                                <FormGroup>
-                                    <FormControlLabel
-                                        control={<Checkbox color="primary" checked={true} onChange={handleCheckboxChange} name="gilad" />}
-                                        label="Poblacional"
-                                        color="primary"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="primary" checked={false} onChange={handleCheckboxChange} name="jason" />}
-                                        label="Ambiental"
-                                        color="primary"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="primary" checked={false} onChange={handleCheckboxChange} name="antoine" />}
-                                        label="Social"
-                                        color="primary"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="primary" checked={false} onChange={handleCheckboxChange} name="jason" />}
-                                        label="Institucional"
-                                        color="primary"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="primary" checked={false} onChange={handleCheckboxChange} name="antoine" />}
-                                        label="Económica"
-                                        color="primary"
-                                    />
-                                </FormGroup>
-                            </Grid>
-                            <Grid item xs={6} >
-                                <Typography color="primary" display="block">Valor R</Typography>
-                                <Slider aria-labelledby="continuous-slider" style={{maxWidth:160}}/>
-                            </Grid>
+                        <Grid item xs={4} >
+                            <Typography color="primary" display="block">Valor R</Typography>
+                            <Slider aria-labelledby="continuous-slider" style={{maxWidth:160}}/>
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={6} >
-                    <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
-                        <Grid item xs={12} >
-                            <Typography  variant={"h6"} color="secondary" display="block">Liberadores</Typography>
+            </Grid>
+            <Grid item xs={6} >
+                <Grid container direction="column" justify="center" alignItems="center" spacing={1}>
+                    <Grid item xs={12} >
+                        <Typography  variant={"h6"} color="secondary" display="block">Liberadores</Typography>
+                    </Grid>
+                    <Grid item xs={12} >  
+                        <TextareaAutosize placeholder="Factores Liberadores" style={{ minHeight: 60,minWidth: 420, backgroundColor: "#D9E2EA"}} />       
+                    </Grid>
+                    <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
+                        <Grid item xs={4} >
+                            <Typography color="secondary" display="block">Dimensiones</Typography>
+                            <FormGroup>
+                                <FormControlLabel
+                                    control={<Checkbox color="secondary" checked={true} onChange={handleCheckboxChange} name="gilad" />}
+                                    label="Poblacional"
+                                    color="secondary"
+                                />
+                                <FormControlLabel
+                                    control={<Checkbox color="secondary" checked={false} onChange={handleCheckboxChange} name="jason" />}
+                                    label="Ambiental"
+                                    color="secondary"
+                                />
+                                <FormControlLabel
+                                    control={<Checkbox color="secondary" checked={false} onChange={handleCheckboxChange} name="antoine" />}
+                                    label="Social"
+                                    color="secondary"
+                                />
+                                <FormControlLabel
+                                    control={<Checkbox color="secondary" checked={false} onChange={handleCheckboxChange} name="jason" />}
+                                    label="Institucional"
+                                    color="secondary"
+                                />
+                                <FormControlLabel
+                                    control={<Checkbox color="secondary" checked={false} onChange={handleCheckboxChange} name="antoine" />}
+                                    label="Económica"
+                                    color="secondary"
+                                />
+                            </FormGroup>
                         </Grid>
-                        <Grid item xs={12} >  
-                            <TextareaAutosize placeholder="Factores Liberadores" style={{ minHeight: 60,minWidth: 440 }} />       
-                        </Grid>
-                        <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
-                            <Grid item xs={6} >
-                                <Typography color="secondary" display="block">Dimensiones</Typography>
-                                <FormGroup>
-                                    <FormControlLabel
-                                        control={<Checkbox color="secondary" checked={true} onChange={handleCheckboxChange} name="gilad" />}
-                                        label="Poblacional"
-                                        color="secondary"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="secondary" checked={false} onChange={handleCheckboxChange} name="jason" />}
-                                        label="Ambiental"
-                                        color="secondary"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="secondary" checked={false} onChange={handleCheckboxChange} name="antoine" />}
-                                        label="Social"
-                                        color="secondary"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="secondary" checked={false} onChange={handleCheckboxChange} name="jason" />}
-                                        label="Institucional"
-                                        color="secondary"
-                                    />
-                                    <FormControlLabel
-                                        control={<Checkbox color="secondary" checked={false} onChange={handleCheckboxChange} name="antoine" />}
-                                        label="Económica"
-                                        color="secondary"
-                                    />
-                                </FormGroup>
-                            </Grid>
-                            <Grid item xs={6} >
-                                <Typography color="secondary" display="block">Valor R</Typography>
-                                <Slider aria-labelledby="continuous-slider" style={{maxWidth:160}}/>
-                            </Grid>
+                        <Grid item xs={4} >
+                            <Typography color="secondary" display="block">Valor L</Typography>
+                            <Slider color="secondary" aria-labelledby="continuous-slider" style={{maxWidth:160}}/>
                         </Grid>
                     </Grid>
                 </Grid>
