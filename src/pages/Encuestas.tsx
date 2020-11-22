@@ -10,30 +10,30 @@ function Menu(){
     return(
         <Grid container justify='center' style={{marginTop: 100}}>
             <Grid item xs={12} md={7} style={{ margin: 20 }} >
-                <Typography style={{ textAlign: 'center', margin: 25 }} variant={"h4"} color="primary" display="block">Mis Tensiones</Typography>
+                <Typography style={{ textAlign: 'center', margin: 25 }} variant={"h4"} color="primary" display="block">Mis Encuestas</Typography>
                 <Grid container justify="flex-end" spacing = {2}>
                     <Grid item>
-                        <Button href="/#/dimensiones" variant="contained" color="primary" > Volver</Button>
+                        <Button href="/#/" variant="contained" color="primary" > Volver</Button>
                     </Grid>
                     <Grid item>
-                        <Button href="/#/tensiones/crear/" variant="contained" color="primary" > Crear tensión</Button>
+                        <Button href="/#/encuestas/crear/" variant="contained" color="primary" > Crear encuesta</Button>
                     </Grid>
                 </Grid>
                 <Divider style={{ marginTop: 15 }} />
             </Grid>
             <Grid item xs={12} md={7} >
-                <ListaTensiones/>
+                <ListaEncuestas/>
             </Grid>
         </Grid>
     );
 }
-function ListaTensiones(){
+function ListaEncuestas(){
     return(
         <Grid container justify='center'>
             <Paper elevation={3} style={{ backgroundColor: "#F0EDE7"}}>
             <List component="nav" aria-label="main mailbox folders" style={{minWidth:350}}>
                 <ListItem button>
-                    <ListItemText primary={`Tension 1 `} />
+                    <ListItemText primary={`Encuesta 1 `} />
                     
                     <Tooltip title="Editar este catálogo">
                         <IconButton  aria-label="editar" >
@@ -60,7 +60,7 @@ function ListaTensiones(){
     );
 }
   
-export default function Tensiones() {
+export default function Encuestas() {
     return(
         
         <div style={{ backgroundColor: "#F0EDE7", minHeight: "100vh" ,  overflowX: 'hidden', overflowY: 'hidden'}}>

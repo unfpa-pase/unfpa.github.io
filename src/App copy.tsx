@@ -35,11 +35,11 @@ const theme = createMuiTheme({
 });
 
 
-function App() {
+function AppCopy() {
   
 
   return (
- 
+
     <HashRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Switch>
@@ -57,4 +57,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppCopy;
