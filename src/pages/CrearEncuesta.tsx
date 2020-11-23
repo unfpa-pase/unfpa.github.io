@@ -52,9 +52,13 @@ function getStepContent(stepIndex:any) {
                         }}
                         >
                         <option aria-label="None" value="" />
-                        <option value={10}>Ten</option>
-                        <option value={20}>Twenty</option>
-                        <option value={30}>Thirty</option>
+                        <option value={10}>10-20</option>
+                        <option value={20}>20-30</option>
+                        <option value={30}>30-40</option>
+                        <option value={40}>40-50</option>
+                        <option value={50}>50-60</option>
+                        <option value={60}>60-70</option>
+                        <option value={70}>70-80</option>
                         </Select>
                     </FormControl>
                 </Grid>
@@ -70,13 +74,9 @@ function getStepContent(stepIndex:any) {
                         }}
                         >
                         <option aria-label="None" value="" />
-                        <option value={10}>10-20</option>
-                        <option value={20}>20-30</option>
-                        <option value={30}>30-40</option>
-                        <option value={40}>40-50</option>
-                        <option value={50}>50-60</option>
-                        <option value={60}>60-70</option>
-                        <option value={70}>70-80</option>
+                        <option value={1}>Femenino</option>
+                        <option value={2}>Masculino</option>
+                        
                         </Select>
                     </FormControl>
                 </Grid>
