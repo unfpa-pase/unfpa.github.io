@@ -53,7 +53,69 @@ function ListaTensiones(){
                     
                     <Divider />
                 </ListItem>
-                
+                <ListItem button>
+                    <ListItemText primary={`Tension 2 `} />
+                    
+                    <Tooltip title="Editar este catálogo">
+                        <IconButton  aria-label="editar" >
+                            <EditIcon />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Duplica este catálogo">
+                        <IconButton  aria-label="duplicate" >
+                            <FileCopyIcon style={{ color: "#00b4d8" }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Elimina este catálogo">
+                        <IconButton  >
+                            <DeleteForeverIcon style={{ color: "#d90429" }} />
+                        </IconButton>
+                    </Tooltip>
+                    
+                    <Divider />
+                </ListItem>
+                <ListItem button>
+                    <ListItemText primary={`Tension 3 `} />
+                    
+                    <Tooltip title="Editar este catálogo">
+                        <IconButton  aria-label="editar" >
+                            <EditIcon />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Duplica este catálogo">
+                        <IconButton  aria-label="duplicate" >
+                            <FileCopyIcon style={{ color: "#00b4d8" }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Elimina este catálogo">
+                        <IconButton  >
+                            <DeleteForeverIcon style={{ color: "#d90429" }} />
+                        </IconButton>
+                    </Tooltip>
+                    
+                    <Divider />
+                </ListItem>
+                <ListItem button>
+                    <ListItemText primary={`Tension 4 `} />
+                    
+                    <Tooltip title="Editar este catálogo">
+                        <IconButton  aria-label="editar" >
+                            <EditIcon />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Duplica este catálogo">
+                        <IconButton  aria-label="duplicate" >
+                            <FileCopyIcon style={{ color: "#00b4d8" }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Elimina este catálogo">
+                        <IconButton  >
+                            <DeleteForeverIcon style={{ color: "#d90429" }} />
+                        </IconButton>
+                    </Tooltip>
+                    
+                    <Divider />
+                </ListItem>
             </List>
             </Paper>
         </Grid>

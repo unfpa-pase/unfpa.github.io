@@ -53,7 +53,69 @@ function ListaEncuestas(){
                     
                     <Divider />
                 </ListItem>
-                
+                <ListItem button>
+                    <ListItemText primary={`Encuesta 2 `} />
+                    
+                    <Tooltip title="Editar este catálogo">
+                        <IconButton  aria-label="editar" >
+                            <EditIcon />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Duplica este catálogo">
+                        <IconButton  aria-label="duplicate" >
+                            <FileCopyIcon style={{ color: "#00b4d8" }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Elimina este catálogo">
+                        <IconButton  >
+                            <DeleteForeverIcon style={{ color: "#d90429" }} />
+                        </IconButton>
+                    </Tooltip>
+                    
+                    <Divider />
+                </ListItem>
+                <ListItem button>
+                    <ListItemText primary={`Encuesta 3 `} />
+                    
+                    <Tooltip title="Editar este catálogo">
+                        <IconButton  aria-label="editar" >
+                            <EditIcon />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Duplica este catálogo">
+                        <IconButton  aria-label="duplicate" >
+                            <FileCopyIcon style={{ color: "#00b4d8" }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Elimina este catálogo">
+                        <IconButton  >
+                            <DeleteForeverIcon style={{ color: "#d90429" }} />
+                        </IconButton>
+                    </Tooltip>
+                    
+                    <Divider />
+                </ListItem>
+                <ListItem button>
+                    <ListItemText primary={`Encuesta 4 `} />
+                    
+                    <Tooltip title="Editar este catálogo">
+                        <IconButton  aria-label="editar" >
+                            <EditIcon />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Duplica este catálogo">
+                        <IconButton  aria-label="duplicate" >
+                            <FileCopyIcon style={{ color: "#00b4d8" }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Elimina este catálogo">
+                        <IconButton  >
+                            <DeleteForeverIcon style={{ color: "#d90429" }} />
+                        </IconButton>
+                    </Tooltip>
+                    
+                    <Divider />
+                </ListItem>
             </List>
             </Paper>
         </Grid>
