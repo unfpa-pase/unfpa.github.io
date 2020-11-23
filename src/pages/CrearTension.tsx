@@ -53,9 +53,23 @@ function getStepContent(stepIndex:any) {
                         }}
                         >
                         <option aria-label="None" value="" />
-                        <option value={10}>Ten</option>
-                        <option value={20}>Twenty</option>
-                        <option value={30}>Thirty</option>
+                        <option value={1}>1. Fin de la pobreza</option>
+                        <option value={2}>2. Hambre cero</option>
+                        <option value={3}>3. Salud y bienestar</option>
+                        <option value={4}>4. Educación de calidad</option>
+                        <option value={5}>5. Igualdad de género</option>
+                        <option value={6}>6. Agua limpia y saneamiento</option>
+                        <option value={7}>7. Energía asequible y no contaminante</option>
+                        <option value={8}>8. Trabajo decente y crecimiento económico</option>
+                        <option value={9}>9. Industria, innovación e infraestructura</option>
+                        <option value={10}>10. Reducción de las desigualdades</option>
+                        <option value={11}>11. Ciudades y comunidades sostenibles</option>
+                        <option value={12}>12. Producción y consumo responsable </option>
+                        <option value={13}>13. Acción por el clima </option>
+                        <option value={14}>14. Vida Submarina </option>
+                        <option value={15}>15. Vida de ecosistemas terrestres </option>
+                        <option value={16}>16. Paz, justicia e instituciones sólidas </option>
+                        <option value={17}>17. Alianzas para lograr los objetivos </option>
                         </Select>
                     </FormControl>
                 </Grid>
