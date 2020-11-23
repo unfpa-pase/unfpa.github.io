@@ -343,7 +343,7 @@ export default function CrearTension() {
 
         function crearMeta(){
             return(
-                <div>
+                <div >
                     <TextField style={{minWidth:200}} id="NombreMeta" label="Nombre Meta" variant="outlined"/>
                 </div>
             );
@@ -351,17 +351,17 @@ export default function CrearTension() {
 
         function crearEvento(){
             return(
-                <div>
+                <div >
                     <Grid container direction="column" justify="center" alignItems="center" spacing={3}>
                         <Grid  item>
                             <Typography style={{ textAlign: 'left'}} variant={"h5"} color="primary" display="block" >Evento</Typography>
                         </Grid>
                         <Grid  item container xs={12} direction="row" justify="center">
-                            <Grid item  sm={12} xs={6}>
-                                <TextField style={{minWidth:120}} id="NombreEvento" label="Nombre Evento" variant="outlined"/>
+                            <Grid item  xs={6}>
+                                <TextField style={{minWidth:110}} id="NombreEvento" label="Nombre Evento" variant="outlined"/>
                             </Grid>
-                            <Grid item sm={12} xs={6}>
-                                <TextField style={{minWidth:120}} id="competencia" label="Competencia" variant="outlined"/>
+                            <Grid item  xs={6}>
+                                <TextField style={{minWidth:110}} id="competencia" label="Competencia" variant="outlined"/>
                             </Grid>
                         </Grid>    
                         <Grid item xs={12}>
@@ -375,7 +375,39 @@ export default function CrearTension() {
                                 </RadioGroup>
                             </FormGroup> 
                         </Grid>
-                        
+                        <Grid item xs={12}>
+                            <Typography style={{ textAlign: 'left'}} variant={"h6"} color="primary" display="block" >Objetivo Desarrollo Sostenible</Typography>
+                            <FormControl variant="outlined" >
+                                <InputLabel htmlFor="outlined-age-native-simple">ODS</InputLabel>
+                                <Select
+                                native
+                                label="ODS"
+                                inputProps={{
+                                    name: 'ods',
+                                    id: 'outlined-age-native-simple',
+                                }}
+                                >
+                                <option aria-label="None" value="" />
+                                <option value={1}>1. Fin de la pobreza</option>
+                                <option value={2}>2. Hambre cero</option>
+                                <option value={3}>3. Salud y bienestar</option>
+                                <option value={4}>4. Educación de calidad</option>
+                                <option value={5}>5. Igualdad de género</option>
+                                <option value={6}>6. Agua limpia y saneamiento</option>
+                                <option value={7}>7. Energía asequible y no contaminante</option>
+                                <option value={8}>8. Trabajo decente y crecimiento económico</option>
+                                <option value={9}>9. Industria, innovación e infraestructura</option>
+                                <option value={10}>10. Reducción de las desigualdades</option>
+                                <option value={11}>11. Ciudades y comunidades sostenibles</option>
+                                <option value={12}>12. Producción y consumo responsable </option>
+                                <option value={13}>13. Acción por el clima </option>
+                                <option value={14}>14. Vida Submarina </option>
+                                <option value={15}>15. Vida de ecosistemas terrestres </option>
+                                <option value={16}>16. Paz, justicia e instituciones sólidas </option>
+                                <option value={17}>17. Alianzas para lograr los objetivos </option>
+                                </Select>
+                            </FormControl>
+                        </Grid>
                         <Grid  item container xs={12} direction="column" justify="center" style={{marginTop:10}}>
                             <Typography style={{ textAlign: 'left'}} variant={"h6"} color="primary" display="block" >Metas</Typography>
                             <Button variant="contained" onClick = {() => setMetaDialog(true)} style={{marginBottom:10}} size="small" color="primary">
