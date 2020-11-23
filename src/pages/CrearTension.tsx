@@ -128,17 +128,17 @@ export default function CrearTension() {
                             <List component="nav" aria-label="main mailbox folders" style={{minWidth:350}}>
                                 <ListItem button>
                                     <ListItemText primary={`Meta 1 `} />
-                                    <Tooltip title="Editar este catálogo">
+                                    <Tooltip title="Editar Meta">
                                         <IconButton  size='small' aria-label="editar" >
                                             <EditIcon />
                                         </IconButton>
                                     </Tooltip>
-                                    <Tooltip title="Duplica este catálogo">
+                                    <Tooltip title="Duplica Meta">
                                         <IconButton size='small' aria-label="duplicate" >
                                             <FileCopyIcon style={{ color: "#00b4d8" }} />
                                         </IconButton>
                                     </Tooltip>
-                                    <Tooltip title="Elimina este catálogo">
+                                    <Tooltip title="Elimina Meta">
                                         <IconButton size='small' aria-label="delete" >
                                             <DeleteForeverIcon style={{ color: "#d90429" }} />
                                         </IconButton>
@@ -147,17 +147,17 @@ export default function CrearTension() {
                                 </ListItem>
                                 <ListItem button>
                                     <ListItemText primary={`Meta 2`} />
-                                    <Tooltip title="Editar este catálogo">
+                                    <Tooltip title="Editar ">
                                         <IconButton  size='small' aria-label="editar" >
                                             <EditIcon />
                                         </IconButton>
                                     </Tooltip>
-                                    <Tooltip title="Duplica este catálogo">
+                                    <Tooltip title="Duplica ">
                                         <IconButton size='small' aria-label="duplicate" >
                                             <FileCopyIcon style={{ color: "#00b4d8" }} />
                                         </IconButton>
                                     </Tooltip>
-                                    <Tooltip title="Elimina este catálogo">
+                                    <Tooltip title="Elimina ">
                                         <IconButton size='small' aria-label="delete" >
                                             <DeleteForeverIcon style={{ color: "#d90429" }} />
                                         </IconButton>
@@ -166,17 +166,17 @@ export default function CrearTension() {
                                 </ListItem>
                                 <ListItem button>
                                     <ListItemText primary={`Meta 3`} />
-                                    <Tooltip title="Editar este catálogo">
+                                    <Tooltip title="Editar ">
                                         <IconButton  size='small' aria-label="editar" >
                                             <EditIcon />
                                         </IconButton>
                                     </Tooltip>
-                                    <Tooltip title="Duplica este catálogo">
+                                    <Tooltip title="Duplica ">
                                         <IconButton size='small' aria-label="duplicate" >
                                             <FileCopyIcon style={{ color: "#00b4d8" }} />
                                         </IconButton>
                                     </Tooltip>
-                                    <Tooltip title="Elimina este catálogo">
+                                    <Tooltip title="Elimina ">
                                         <IconButton size='small' aria-label="delete" >
                                             <DeleteForeverIcon style={{ color: "#d90429" }} />
                                         </IconButton>
@@ -203,17 +203,17 @@ export default function CrearTension() {
                         <ListItem button>
                             <ListItemText primary={`Evento 1 `} />
                             
-                            <Tooltip title="Editar este catálogo">
+                            <Tooltip title="Editar ">
                                 <IconButton  aria-label="editar" >
                                     <EditIcon />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Duplica este catálogo">
+                            <Tooltip title="Duplica ">
                                 <IconButton  aria-label="duplicate" >
                                     <FileCopyIcon style={{ color: "#00b4d8" }} />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Elimina este catálogo">
+                            <Tooltip title="Elimina ">
                                 <IconButton  >
                                     <DeleteForeverIcon style={{ color: "#d90429" }} />
                                 </IconButton>
@@ -224,17 +224,17 @@ export default function CrearTension() {
                         <ListItem button>
                             <ListItemText primary={`Evento 2 `} />
                             
-                            <Tooltip title="Editar este catálogo">
+                            <Tooltip title="Editar ">
                                 <IconButton  aria-label="editar" >
                                     <EditIcon />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Duplica este catálogo">
+                            <Tooltip title="Duplica ">
                                 <IconButton  aria-label="duplicate" >
                                     <FileCopyIcon style={{ color: "#00b4d8" }} />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Elimina este catálogo">
+                            <Tooltip title="Elimina ">
                                 <IconButton  >
                                     <DeleteForeverIcon style={{ color: "#d90429" }} />
                                 </IconButton>
@@ -246,17 +246,17 @@ export default function CrearTension() {
                         <ListItem button>
                             <ListItemText primary={`Evento 3 `} />
                             
-                            <Tooltip title="Editar este catálogo">
+                            <Tooltip title="Editar ">
                                 <IconButton  aria-label="editar" >
                                     <EditIcon />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Duplica este catálogo">
+                            <Tooltip title="Duplica ">
                                 <IconButton  aria-label="duplicate" >
                                     <FileCopyIcon style={{ color: "#00b4d8" }} />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Elimina este catálogo">
+                            <Tooltip title="Elimina ">
                                 <IconButton  >
                                     <DeleteForeverIcon style={{ color: "#d90429" }} />
                                 </IconButton>
@@ -267,17 +267,17 @@ export default function CrearTension() {
                         <ListItem button>
                             <ListItemText primary={`Evento 4 `} />
                             
-                            <Tooltip title="Editar este catálogo">
+                            <Tooltip title="Editar ">
                                 <IconButton  aria-label="editar" >
                                     <EditIcon />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Duplica este catálogo">
+                            <Tooltip title="Duplica ">
                                 <IconButton  aria-label="duplicate" >
                                     <FileCopyIcon style={{ color: "#00b4d8" }} />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Elimina este catálogo">
+                            <Tooltip title="Elimina ">
                                 <IconButton  >
                                     <DeleteForeverIcon style={{ color: "#d90429" }} />
                                 </IconButton>
@@ -288,17 +288,17 @@ export default function CrearTension() {
                         <ListItem button>
                             <ListItemText primary={`Evento 5 `} />
                             
-                            <Tooltip title="Editar este catálogo">
+                            <Tooltip title="Editar ">
                                 <IconButton  aria-label="editar" >
                                     <EditIcon />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Duplica este catálogo">
+                            <Tooltip title="Duplica ">
                                 <IconButton  aria-label="duplicate" >
                                     <FileCopyIcon style={{ color: "#00b4d8" }} />
                                 </IconButton>
                             </Tooltip>
-                            <Tooltip title="Elimina este catálogo">
+                            <Tooltip title="Elimina ">
                                 <IconButton  >
                                     <DeleteForeverIcon style={{ color: "#d90429" }} />
                                 </IconButton>
@@ -417,17 +417,17 @@ export default function CrearTension() {
                                 <List component="nav" aria-label="main mailbox folders">
                                     <ListItem button>
                                         <ListItemText primary={`Meta 1 `} />
-                                        <Tooltip title="Editar este catálogo">
+                                        <Tooltip title="Editar ">
                                             <IconButton  size='small' aria-label="editar" >
                                                 <EditIcon />
                                             </IconButton>
                                         </Tooltip>
-                                        <Tooltip title="Duplica este catálogo">
+                                        <Tooltip title="Duplica ">
                                             <IconButton size='small' aria-label="duplicate" >
                                                 <FileCopyIcon style={{ color: "#00b4d8" }} />
                                             </IconButton>
                                         </Tooltip>
-                                        <Tooltip title="Elimina este catálogo">
+                                        <Tooltip title="Elimina ">
                                             <IconButton size='small' aria-label="delete" >
                                                 <DeleteForeverIcon style={{ color: "#d90429" }} />
                                             </IconButton>
@@ -436,17 +436,17 @@ export default function CrearTension() {
                                     </ListItem>
                                     <ListItem button>
                                         <ListItemText primary={`Meta 2`} />
-                                        <Tooltip title="Editar este catálogo">
+                                        <Tooltip title="Editar ">
                                             <IconButton  size='small' aria-label="editar" >
                                                 <EditIcon />
                                             </IconButton>
                                         </Tooltip>
-                                        <Tooltip title="Duplica este catálogo">
+                                        <Tooltip title="Duplica ">
                                             <IconButton size='small' aria-label="duplicate" >
                                                 <FileCopyIcon style={{ color: "#00b4d8" }} />
                                             </IconButton>
                                         </Tooltip>
-                                        <Tooltip title="Elimina este catálogo">
+                                        <Tooltip title="Elimina ">
                                             <IconButton size='small' aria-label="delete" >
                                                 <DeleteForeverIcon style={{ color: "#d90429" }} />
                                             </IconButton>
