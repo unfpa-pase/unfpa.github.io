@@ -14,10 +14,10 @@ export default function Home() {
                         <img alt="complex" src={Logo} style={{ display: 'block', marginTop:"15%", maxWidth: '45%',minWidth: '35%', marginLeft:'30%',marginRight:'30%'}}/>
                     </Grid>
                     <Grid  item xs={12} >
-                        <Button href="/#dimensiones" variant="contained" color="secondary" style={{maxWidth: '300px', minWidth: '300px'}}>Matriz de tensiones</Button>  
+                        <Button href="/#dimensiones" variant="contained" color="secondary" style={{maxWidth: '300px', minWidth: '300px'}}>Ejercicios</Button>  
                     </Grid> 
                     <Grid  item xs={12} >
-                        <Button href="/#encuestas" variant="contained" color="secondary" style={{maxWidth: '300px', minWidth: '300px'}}>Encuesta expertos locales</Button>  
+                        <Button variant="contained" color="secondary" style={{maxWidth: '300px', minWidth: '300px'}}>Ver datos</Button>  
                     </Grid>
                     <Grid  item xs={12} >
                         <Button variant="contained" color="secondary" style={{maxWidth: '300px', minWidth: '300px'}}>Ver gráficas</Button>  

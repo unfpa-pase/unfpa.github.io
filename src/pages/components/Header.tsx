@@ -1,23 +1,3 @@
-/*import React from 'react';
-import "../css/styles.css";
-import {IconButton,Toolbar, AppBar, Button, Typography} from '@material-ui/core';
-export default function Header() {
-    return(
-        <div>
-            <AppBar position="static">
-                <Toolbar>
-                    <IconButton edge="start"  color="inherit" aria-label="menu">
-                    
-                    </IconButton>
-                    <Typography variant="h6" >
-                    News
-                    </Typography>
-                    <Button color="inherit">Login</Button>
-                </Toolbar>
-            </AppBar>
-        </div>
-    );
-}*/
 import React, { memo, useCallback, useState } from "react";
 import { Link } from "react-router-dom";
 import {AppBar, Toolbar, Button, Hidden, IconButton, makeStyles} from "@material-ui/core";
@@ -30,7 +10,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import PhoneIcon from '@material-ui/icons/Phone';
 import CreateIcon from '@material-ui/icons/Create';
 import NavigationDrawer from "../components/HeaderDrawer";
-import Logotipo from '../images/Home/UnfpaLogo.png'; 
+import Logotipo from '../../images/Home/UnfpaLogo.png'; 
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -91,8 +71,8 @@ function NavBar() {
       icon: <HomeIcon className="text-white" />
     },
     {
-      link: "/encuestas",
-      name: "Encuestas",
+      link: "/dimensiones",
+      name: "Dimensiones",
       icon: <PeopleIcon className="text-white" />
     },
     {

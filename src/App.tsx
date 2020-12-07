@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
+
 import Home from './pages/Home';
 import Tensiones from './pages/Tensiones';
 import CrearTension from './pages/CrearTension';
 import Dimensiones from './pages/Dimensiones';
-import Encuestas from './pages/Encuestas';
-import CrearEncuesta from './pages/CrearEncuesta';
+import AmbienteAmbiental from './pages/DimensionesDetalle/AmbienteAmbiental';
+import AmbienteConstruido from './pages/DimensionesDetalle/AmbienteConstruido';
+import Sociocultural from './pages/DimensionesDetalle/Sociocultural';
+import Economico from './pages/DimensionesDetalle/Economico';
+
 
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
@@ -48,8 +52,11 @@ function App() {
                 <Route exact path='/dimensiones' component={Dimensiones} />
                 <Route exact path='/tensiones' component={Tensiones} />
                 <Route exact path='/tensiones/crear/' component={CrearTension} />
-                <Route exact path='/encuestas' component={Encuestas} />
-                <Route exact path='/encuestas/crear/' component={CrearEncuesta} />
+                <Route exact path='/dimension/ambienteambiental/' component={AmbienteAmbiental} />
+                <Route exact path='/dimension/ambienteconstruido/' component={AmbienteConstruido} />
+                <Route exact path='/dimension/sociocultural/' component={Sociocultural} />
+                <Route exact path='/dimension/economico/' component={Economico} />
+
               </ThemeProvider>
           </Switch>
         </div>
